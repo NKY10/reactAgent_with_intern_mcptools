@@ -37,3 +37,6 @@
    ```
    python main.py
    ```
+## 运行示例
+intern-latest, thinking_mode=True
+![example](asset/example.png)

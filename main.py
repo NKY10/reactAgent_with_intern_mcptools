@@ -10,7 +10,7 @@ load_dotenv()
 async def main():
     """运行所有测试"""
     # 测试工具加载
-    agent = ReactAgent(model='intern-s1', thinking_mode=False)
+    agent = ReactAgent(model='intern-latest', thinking_mode=True)
     await agent.add_tool_from_mcp("http://localhost:8001/mcp")
     print(f"成功加载工具数量: {len(agent.tools)}")
 
