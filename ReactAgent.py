@@ -52,12 +52,12 @@ class ReactAgent:
         if message.tool_calls is None:
             message_dict = {
                 "role": message.role,
-                "content": self._format_thinking_content(message),       # internlm 会返回 reasoning_content而不是content
+                "content": self._format_thinking_content(message),      
             }
         else:
             message_dict = {
                 "role": message.role,
-                "content": self._format_thinking_content(message),       # internlm 会返回 reasoning_content而不是content
+                "content": self._format_thinking_content(message),       
                 "tool_calls": [
                     {
                         "id": tc.id,
